@@ -11,6 +11,7 @@ module.exports = merge(baseConfig, {
   entry: {
     main: './src/main/main.ts',
     preload: './src/main/preload.ts',
+    cli: './src/main/cli.ts',
   },
   resolve: {
     plugins: [new TsconfigPathsPlugin({})],
@@ -50,6 +51,7 @@ module.exports = merge(baseConfig, {
     }),
     new CopyPlugin({
       patterns: [{ from: 'src/assets', to: 'assets' }],
+      patterns: [{ from: 'src/main/bin', to: 'bin' }],
     }),
   ],
 })

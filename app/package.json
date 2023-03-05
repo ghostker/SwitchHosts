@@ -12,6 +12,10 @@
   "homepage": "https://switchhosts.vercel.app",
   "scripts": {
   },
+  "bin": {
+    "swh": "bin/switchhosts-cmd",
+    "switchhosts": "bin/switchhosts-cmd"
+  },
   "license": "Apache-2.0",
   "dependencies": {}
 }
